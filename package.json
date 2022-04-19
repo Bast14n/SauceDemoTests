@@ -1,0 +1,17 @@
+{
+  "name": "saucedemotests",
+  "version": "1.0.0",
+  "description": "cypress tests for souce demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "ng tests"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.5.4"
+  },
+  "dependencies": {
+    "typescript": "^4.6.3"
+  }
+}

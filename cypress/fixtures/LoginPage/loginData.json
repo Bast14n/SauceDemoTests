@@ -1,0 +1,26 @@
+[
+    {
+        "Login": "standard_user",
+        "Password": "secret_sauce"
+    },
+    {
+        "Login": "locked_out_user",
+        "Password": "secret_sauce"
+    },
+    {
+        "Login": " ",
+        "Password": " "
+    },
+    {
+        "Login": "standard_user",
+        "Password": " "
+    },
+    {
+        "Login": "",
+        "Password": "password"
+    },
+    {
+        "Login": "not_existing_user",
+        "Password": "password"
+    }
+]
