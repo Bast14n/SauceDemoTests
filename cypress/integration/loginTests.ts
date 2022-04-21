@@ -7,7 +7,7 @@ const productsPage = new ProductsPage();
 
 describe('Perform tests on login page', () => {
     before(() => {
-        cy.openApp();
+        cy.visit('/');
     })
 
     it('#1 When user log in to app with proper credentials #Then next page should be visible', () => {

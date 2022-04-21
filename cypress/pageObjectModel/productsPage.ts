@@ -1,4 +1,6 @@
-class ProductsPage {
+import CommonPage from "./commonPage";
+
+class ProductsPage extends CommonPage {
 
     title() {
         return cy.get('.header_secondary_container > .title');
@@ -16,12 +18,36 @@ class ProductsPage {
         return cy.get('.product_sort_container');
     }
 
-    productsNames() {
-        return cy.get('.inventory_item_name');
+    goToBasket() {
+        return cy.get('.shopping_cart_link').click();
     }
 
-    productPrices() {
-        return cy.get('.inventory_item_price');
+    iconBasketItemQuantity() {
+        return cy.get('.shopping_cart_badge');
+    }
+
+    buttonAddBackpack() {
+        return cy.get('#add-to-cart-sauce-labs-backpack');
+    }
+
+    buttonAddBikeLight() {
+        return cy.get('#add-to-cart-sauce-labs-bike-light');
+    }
+
+    buttonAddTShirt() {
+        return cy.get('#add-to-cart-sauce-labs-bolt-t-shirt');
+    }
+
+    buttonAddJacket() {
+        return cy.get('#add-to-cart-sauce-labs-fleece-jacket');
+    }
+
+    buttonAddOnsie() {
+        return cy.get('#add-to-cart-sauce-labs-onesie');
+    }
+
+    buttonAddAllTheThings() {
+        return cy.get('#add-to-cart-test.allthethings()-t-shirt-(red)');
     }
 }
 

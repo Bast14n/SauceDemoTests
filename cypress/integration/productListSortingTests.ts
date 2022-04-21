@@ -4,7 +4,7 @@ const productsPage = new ProductsPage();
 
 describe('Tests different types of sorting in products page', () => {
     before(() => {
-        cy.openApp();
+        cy.visit('/');
         cy.loginToApp();
     })
 
