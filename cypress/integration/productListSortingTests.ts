@@ -15,7 +15,7 @@ describe('Tests different types of sorting in products page', () => {
             const names = Cypress._.map(products, (name) => {
                 innerText(name);
             })
-            const sorted = Cypress._.sortBy(names);
+            const sorted = names.sort();
             expect(sorted).to.deep.equal(names)
         });
 
@@ -26,7 +26,7 @@ describe('Tests different types of sorting in products page', () => {
         productsPage.productsNames().then((products) => {
 
             const names = Cypress._.map(Cypress.$.makeArray(products), 'innerText')
-            const sorted = Cypress._.sortBy(names);
+            const sorted = names.sort();
 
             sorted.reverse();
             expect(sorted).to.deep.equal(names)
@@ -43,7 +43,7 @@ describe('Tests different types of sorting in products page', () => {
                 convertedPrices.push(parseFloat(p.substring(1)));
             })
 
-            const sorted = Cypress._.sortBy(convertedPrices);
+            const sorted = convertedPrices.sort();
 
             expect(sorted).to.deep.equal(convertedPrices)
         });
@@ -60,7 +60,7 @@ describe('Tests different types of sorting in products page', () => {
                 convertedPrices.push(parseFloat(p.substring(1)));
             })
 
-            const sorted = Cypress._.sortBy(convertedPrices);
+            const sorted = convertedPrices.sort();
 
             sorted.reverse();
             expect(sorted).to.deep.equal(convertedPrices)

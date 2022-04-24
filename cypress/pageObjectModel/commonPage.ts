@@ -29,7 +29,7 @@ class CommonPage {
     }
 
     buttonRemoveAllTheThings() {
-        return cy.get('#remove-test.allthethings()-t-shirt-(red)');
+        return cy.get('[name="remove-test.allthethings()-t-shirt-(red)"]');
     }
 }
 

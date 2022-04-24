@@ -13,7 +13,13 @@
 - Check proper sorting products by price (high to low)
 
 ### adding products to basket
+- Check adding one product to basket
+- Check adding multiple products to basket
 
 ### remove products from basket
+- Check removing one products from products list
+- Check removing multiple products from products list
+- Check removing one product from basket view
+- Check removing multiple products from basket view
 
 ### checkout form

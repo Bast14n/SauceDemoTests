@@ -47,7 +47,7 @@ class ProductsPage extends CommonPage {
     }
 
     buttonAddAllTheThings() {
-        return cy.get('#add-to-cart-test.allthethings()-t-shirt-(red)');
+        return cy.get('[name="add-to-cart-test.allthethings()-t-shirt-(red)"]');
     }
 }
 
