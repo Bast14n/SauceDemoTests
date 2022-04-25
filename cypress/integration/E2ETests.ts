@@ -9,13 +9,7 @@ const firstName = 'firstName';
 const lastName = 'lastName';
 const postalCode = '11-11';
 
-
-
 describe('Performing E2E tests in app', () => {
-    before(() => {
-        cy.visit('/');
-    })
-
     beforeEach(() => {
         cy.loginToApp();
     })

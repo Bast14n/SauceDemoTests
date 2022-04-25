@@ -3,7 +3,7 @@ import CommonPage from "./commonPage";
 class BasketPage extends CommonPage {
 
     goToCheckout() {
-        return cy.get('#checkout').click();
+        this.buttonCheckout().click();
     }
 
     goToOverview() {
@@ -18,7 +18,7 @@ class BasketPage extends CommonPage {
         return cy.get('#first-name');
     }
 
-    inputSecondName() {
+    inputLastName() {
         return cy.get('#last-name');
     }
 
@@ -34,9 +34,21 @@ class BasketPage extends CommonPage {
         return cy.get('#finish');
     }
 
+    buttonCheckout() {
+        return cy.get('#checkout');
+    }
+
+    errorContainer() {
+        return cy.get('.error-message-container');
+    }
+
+    titleContainer() {
+        return cy.get('.header_secondary_container');
+    }
+
     fillForm(firstName: string, secondName: string, postalCode: string) {
         this.inputFirstName().type(firstName);
-        this.inputSecondName().type(secondName);
+        this.inputLastName().type(secondName);
         this.inputPostalCode().type(postalCode);
     }
 

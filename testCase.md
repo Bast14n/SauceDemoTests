@@ -23,3 +23,9 @@
 - Check removing multiple products from basket view
 
 ### checkout form
+- Check if its possible to go to form without adding any product to basket
+- Check form validation and error message: go to next step without passing any data
+- Check form validation and error message: go to next step with passing only first name
+- Check form validation and error message: go to next step with passing only first name and last name
+- Check form validation and error message: go to next step with passing all data but zip code contains letters
+- Check form validation: go to next step with passing all data with proper format
